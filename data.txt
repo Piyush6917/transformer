@@ -1,0 +1,554 @@
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 1]
+Crash Course AKTU AKTU B.Tech III-Sem B.Tech III-Sem Python Python Unit-2 in One Shot Unit-2 in One Shot Pragya Ma'am Pragya Ma'am
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 2]
+1 SYLLABUS OF UNIT 2 Python Program Flow Control Conditional blocks: if, else and else if, Simple for loops in python, For loop using ranges, string, list and dictionaries. Use of while loops in python, Loop manipulation using pass, continue, break and else. Programming using Python conditional and loop blocks
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 3]
+2 IMPORTANT QUESTION OF UNIT 2 1. Explain all the conditional statement(if if else etc) 2. Write a program to find out whether a year is leap year or not 3. write a program to find out the whether a number is palindrome or not 4. write a program to find out the fibonnaci series upto n term 5. write a program to convert time from 12 hour to 24 hour format 6 write a program to check whether a number is prime or not 7 Explain break, continue, pass statement with example with example 8. Any patter question check the notes. 9. Write a Python program to sum and multiply all the items in a dictionary 10. Write a Python program to get the maximum and minimum values of a dictionary. 11. Write a Python program to get the key, value and item in a dictionary. 12. Write a Python program to removeduplicates from a list. 13. Write a Python program to find the list words that are longer than n from a given list of words. 14. Write a Python program to print the numbers of a specified list after removing even numbers from it
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 4]
+3 IMPORTANT QUESTION OF UNIT 2 15. Write a Python program to check if each number is prime in a given list of numbers. Return True if all numbers are prime otherwise False. 16. Python program to find the second smallest/largest number in a list: 17. Write a Python program to get the frequency of elements in a list 18 write a program to check whether entered number is Fibonacci number or not 19 Difference between for and while 20 write a program to check whether entered number is Fibonacci number or not in range
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 5]
+PYTHON PROGRAMMING (BCC302 / BCC402/ BCC302H / BCC402H) SYLLABUS UNIT 2 :Python Program Flow Control Conditional blocks if, else and else if, Simple for loops in python, For loop using ranges, string, list and dictionaries. Use of while loops in python, Loop manipulation using pass, continue, break and else. Programming using Python conditional and loop blocks 1
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 6]
+PYTHON PROGRAMMING UNIT 2 Python Program Flow Control Conditional blocks LEC-1 By Pragya Rajvanshi M.Tech(CSE) 2
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 7]
+If-else statement Syntax if condition: #block of statements else: #another block of statements (else-block) Write a program to find out whether a number is even or odd 3
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 8]
+elif statement if expression 1: # block of statements elif expression 2: # block of statements elif expression 3: # block of statement else: #statement Write a program to find out the largest number among three 4
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 9]
+Write a program to simulate the calculator 5
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 10]
+Nested if else if condition 1: if condition2: #nested if code else: #nested else code else: #else code Write a program to find out the largest number among three using nested –if else 6
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 11]
+Write a program to find out whether a year is leap year or not Write a program to find out the roots of quadratic equation 7
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 12]
+SOME BASIC QUESTIONS Write a Python program that accepts the user's first and last name and prints them in reverse order with a space between them 8
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 13]
+Write a Python program that accepts a sequence of comma-separated numbers from the user and generates a list and a tuple of those numbers. Write a Python program to display the first and last colors and middle element from the list 9
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 14]
+Write a Python program that accepts an integer (n) and computes the value of n+nn+nnn. Write a Python program to count the number 4 in a given list. Write a Python program to calculate the number of days between two dates. Sample dates : (2014, 7, 2), (2014, 7, 11) 10
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 15]
+Python program that takes a string and a non-negative integer n, then returns n copies of the first two characters of the given string: Write a Python program to test whether a passed letter is a vowel or not Write a Python program that concatenates all elements in a list into a string and returns it. 11
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 16]
+Write a Python program to sum three given integers. However, if two values are equal, the sum will be zero Write a Python program to sum two given integers. However, if the sum is between 15 and 20 it will return 20 12
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 17]
+Write a Python program to add two objects if both objects are integers. Write a Python program to sum two given integers. However, if the sum is between 15 and 20 it will return 20 13
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 18]
+Write a Python program to parse a string to float or integer Calculate the hypotenuse of a right angled triangle Write a Python program to count the number of occurrences of a specific character in a string. 14
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 19]
+Write a Python program to remove the first item from a specified list Write a Python program to test whether all numbers in a list are greater than a certain number. 15
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 20]
+Write a Python program to sum all the items in a list Write a Python program to multiply all the items in a list. Write a Python program to get the largest number from a list 16
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 21]
+Write a Python program to count the number of strings from a given list of strings. The string length is 2 or more and the first and last characters are the same Write a Python program to get the smallest number from a list 17
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 22]
+PYTHON PROGRAMMING UNIT 2 Python Program Flow Control Conditional blocks LEC-2 By Pragya Rajvanshi M.Tech(CSE) 2
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 23]
+LOOPS Loops is used to execute a block of statements repeatedly until a given condition is satisfied. 1 while loop Syntax while expression: statement(s) 2 For loop Syntax for var in iterable: # statements 3
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 24]
+Range () The Python range() function returns a sequence of numbers, in a given range. 1. range (stop) 2.range (start, stop) 3.range (start, stop, step) 4
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 25]
+Write a for loop that prints number from 0 to 57 using range function write a program to check whether a number is Armstrong or not 5
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 26]
+write a program to find out the whether a number is palindrome or not write a program to find out the fibonnaci series upto n term 6
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 27]
+Write a program to find out the factorial of a number write a program to check whether a number is prime or not 7
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 28]
+write a program to print the reverse of a number What will be the output? 8
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 29]
+write a program to convert time from 12 hour to 24 hour format 9
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 30]
+break statement The break statement is used to terminate the loop immediately when it is encountered. The syntax of the break statement is: break 10
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 31]
+continue statement The continue statement is used to skip the current iteration of the loop and the control flow of the program goes to the next iteration. The syntax Continue; 11
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 32]
+Continue Example Break example 12
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 33]
+Pass example python pass statement is a null statement. But the difference between pass and comment is that comment is ignored by the interpreter whereas pass is not ignored. SYNTAX pass What is pass statement in Python? When the user does not know what code to write, So user simply places a pass at that line. Sometimes, the pass is used when the user doesn’t want any code to execute. So users can simply place a pass where empty code is not allowed, like in loops, function definitions, class definitions, or in if statements. So using a pass statement user avoids this error. 13
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 34]
+14
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 35]
+Write a program to print the prime number in range 15
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 36]
+PYTHON PROGRAMMING UNIT 2 Python Program Flow Control Conditional blocks LEC-3 By Pragya rajvanshi 1
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 37]
+2 Pattern printing-1 Pattern printing-2
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 38]
+3 Pattern printing-3 Pattern printing-4
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 39]
+4 Pattern printing-5 Pattern printing-6
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 40]
+5 Pattern printing-7 Pattern printing-8
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 41]
+1. Write a Python script to add a key to a dictionary 2. Write a Python script to concatenate/merge the following dictionaries to create a new one. 6
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 42]
+3. Write a Python script to check whether a given key already exists in a dictionary. 4.Write a Python program to iterate over dictionaries using for loops 7
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 43]
+5. Write a Python script to generate and print a dictionary that contains a number (between 1 and n) in the form (x, x*x). 6.Write a Python script to print a dictionary where the keys are numbers between 1 and 15 (both included) and the values are the square of the keys. 8
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 44]
+7. Write a Python program to sum all the items in a dictionary 8.Write a Python program to Multiply all the items in a dictionary 9. Write a Python program to remove a key from a dictionary. 9
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 45]
+10.Write a Python program to map two lists into a dictionary. 11 Write a Python program to sort a given dictionary by key. 12. Write a Python program to get the maximum and minimum values of a dictionary. 10
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 46]
+13. Write a Python program to remove duplicates from the dictionary. 14 Write a Python program to check if a dictionary is empty or not. 15. Write a Python program to combine two dictionary by adding values for common keys. d1 = {'a': 100, 'b': 200, 'c':300} d2 = {'a': 300, 'b': 200, 'd':400} Sample output: Counter({'a': 400, 'b': 400, 'd': 400, 'c': 300}) 11
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 47]
+16. Write a Python program to print all distinct values in a dictionary. Sample Data : [{"V":"S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII":"S005"}, {"V":"S009"},{"VIII":"S007"}] Expected Output : Unique Values: {'S005', 'S002', 'S007', 'S001', 'S009'} 12
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 48]
+17. Write a Python program to create and display all combinations of letters, selecting each letter from a different key in a dictionary. Sample data : {'1':['a','b'], '2':['c','d']} 18. Write a Python program to create a dictionary from a string. Note: Track the count of the letters from the string 13
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 49]
+19. Write a Python program to remove spaces from dictionary keys 20. Write a Python program to check if multiple keys exist in a dictionary. 14
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 50]
+21. Write a Python program to get the key, value and item in a dictionary. 22 Write a Python program to print a dictionary line by line. 23. Write a Python program to replace dictionary values with their sums. 15
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 51]
+Dictionary 24.Write a Python program to create a dictionary of keys x, y, and z where each key has as value a list from 11-20, 21-30, and 31-40 respectively. Access the fifth value of each key from the dictionary. {'x': [11, 12, 13, 14, 15, 16, 17, 18, 19], 'y': [21, 22, 23, 24, 25, 26, 27, 28, 29], 'z': [31, 32, 33, 34, 35, 36, 37, 38, 39]} 15 25 35 x has value [11, 12, 13, 14, 15, 16, 17, 18, 19] y has value [21, 22, 23, 24, 25, 26, 27, 28, 29] z has value [31, 32, 33, 34, 35, 36, 37, 38, 39] 16
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 52]
+25. Write a Python program to match key values in two dictionaries. Sample dictionary: {'key1': 1, 'key2': 3, 'key3': 2}, {'key1': 1, 'key2': 2} Expected output: key1: 1 is present in both x and y 17
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 53]
+26.Write a Python program to find the key of the maximum value in a dictionary. Sample Output: Original dictionary elements: {'Theodore': 19, 'Roxanne': 22, 'Mathew': 21, 'Betty': 20} Finds the key of the maximum and minimum value of the said dictionary: ('Roxanne', 'Theodore') 18
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 54]
+PYTHON PROGRAMMING UNIT 2 Python Program Flow Control Conditional blocks By Pragya rajvanshi LEC-4(list) 1
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 55]
+2 1. Write a Python program to remove duplicates from a list. 2. Write a Python program to check if a list is empty or not. 3. Write a Python program to clone or copy a list 4.Write a Python program to find the list of words that are longer than n from a given list of words.
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 56]
+3 5. Write a Python program to print a specified list after removing the 0th, 4th and 5th elements. Sample List : ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow'] Expected Output : ['Green', 'White', 'Black'] 6. Write a Python program to print the numbers of a specified list after removing even numbers from it
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 57]
+4 7. Write a Python program to shuffle and print a specified list 8. Whose number square is less than equal to 30 range is taken between 1 to 30
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 58]
+5 9. Write a Python program to check if each number is prime in a given list of numbers. Return True if all numbers are prime otherwise False. 10.Write a Python program to calculate the difference between the two lists.
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 59]
+6 11. Write a Python program to access the index of a list. 12. Write a Python program to convert a list of characters into a string. 13. Write a Python program to find the index of an item in a specified list. 14. Write a Python program to append a list to the second list.
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 60]
+7 15. Python program to find the second smallest number in a list: 16 . Python program to find the second largest number in a list:
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 61]
+8 17. Write a Python program to get unique values from a list. 18.Write a Python program to get the frequency of elements in a list
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 62]
+PYTHON PROGRAMMING UNIT 2 Python Program Flow Control Conditional Blocks By LEC-5(list) Pragya Rajvanshi 1
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 63]
+2 1. Write a Python program to count the number of elements in a list within a specified range. 2. Write a Python program to check whether a list contains a sub list.
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 64]
+3 3. Write a Python program to find common items in two lists 4. Write a Python program to convert a list of multiple integers into a single integer.
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 65]
+4 5. Write a Python program to split a list based on the first character of a word. 6. Write a Python program to create multiple lists.
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 66]
+5 7. Write a Python program to split a list into different variables. 8. Write a Python program to insert an element before each element of a list.
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 67]
+6 9. Write a Python program to split a list every Nth element. Sample list: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'] Expected Output: [['a', 'd', 'g', 'j', 'm'], ['b', 'e', 'h', 'k', 'n'], ['c', 'f', 'i', 'l']]
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 68]
+7 10. Write a Python program to concatenate elements of a list. 11.. Write a Python program to convert a string to a list. 12.. Write a Python program to check if all items in a given list of strings are equal to a given string.
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 69]
+PYTHON PROGRAMMING UNIT 2 Python Program Flow Control Conditional blocks By Pragya rajvanshi LEC-6(some mixed questions) 1
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 70]
+2 1. Write a Python program to replace the last element in a list with another list. Sample data : [1, 3, 5, 7, 9, 10], [2, 4, 6, 8] Expected Output: [1, 3, 5, 7, 9, 2, 4, 6, 8] 2. Write a Python program to check whether the n-th element exists in a given list. 3. Write a program to create a list of empty dictionary
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 71]
+3 4. Write a Python program to reverse a given list of lists 5. Write a Python program to remove specific words from a given list. Original list: ['red', 'green', 'blue', 'white', 'black', 'orange'] Remove words: ['white', 'orange'] After removing the specified words from the said list: ['red', 'green', 'blue', 'black']
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 72]
+4 6 . Write a Python program to combine two lists into another list randomly.
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 73]
+5 Difference between while and for loop For loop While loop For loop is used to iterate over a sequence of items. While loop is used to repeatedly execute a block of statements while a condition is true. For loops are designed for iterating over a sequence of items. Eg. list, tuple, etc. While loop is used when the number of iterations is not known in advance or when we want to repeat a block of code until a certain condition is met. For loop require a sequence to iterate over. While the loop requires an initial condition that is tested at the beginning of the loop. For loop is typically used for iterating over a fixed sequence of items While loop is used for more complex control flow situations. For loop is more efficient than a while loop when iterating over sequences, since the number of iterations is predetermined and the loop can be optimized accordingly. While a loop may be more efficient in certain situations where the condition being tested can be evaluated quickly.
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 74]
+6 7.write a program to check whether entered number is Fibonacci number or not
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 75]
+7 8.write a program to check whether entered number is Fibonacci number or not in range
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 76]
+8 Use of else with loops Yes, you can use else with loop
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 77]
+9 Conditional statement: If statement If-else statement Nested-if else Elif statement Purpose of loops Loops are used in programming to execute a set of instructions repeatedly until a certain condition is met. They help automate repetitive tasks, reducing the amount of code needed and improving efficiency
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 78]
+10 AKTU QUESTIONS Q.1 What are conditional statement in python using small code example AKTU 2019- 20 Q.2 Write a python program to check if the input year is a leap year or not AKTU 2021- 22 Q.3 Write a program to produce the Fibonacci series in python AKTU 2021- 22 Q.4 Define loops. Explain different types of loops in python Or Difference between while and for loop with example, syntax and flow diagram AKTU 2023- 24 Q.5 ANY pattern question AKTU 2021- 22 AKTU 2022- 23
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 79]
+11 AKTU QUESTIONS Q.6 Explain the the working and purpose of loops. Discuss break and continue with example .Write a python program to convert time from 12 hour format to 24 hour format AKTU 2019- 20 Q.7 Explain the use of break , pass and continue with the suitable example AKTU 2021- 22 Q.8 Write a program to check an input number is prime or not AKTU 2021- 22 Q.9 Write a program to calculate the reverse of a number AKTU 2022- 23 Q.10 Write a program to check whether a number is Fibonacci number or not AKTU 2019- 20 Q.11 Write a program to convert time format from 12 hour to 24 hour format AKTU 2019- 20
+
+[Document: Python-U-2-ONE-SHOT-Notes.pdf | Page: 80]
+12
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 2]
+1 SYLLABUS OF UNIT- 3 Python Complex data types: Using string data type and string operations, Defining list and list slicing, Use of Tuple data type. String, List and Dictionary, Manipulations Building blocks of python programs, string manipulation methods, List manipulation. Dictionary manipulation, Programming using string, list and dictionary in-built functions. Python Functions, Organizing python codes using functions.
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 3]
+2 IMPORTANT QUESTION OF UNIT-3 1. Explain some methods of string, list and dictionary with example 2. What is list slicing, list comprehension? Why list called mutable? lustrate different list slicing constructs for the following operations on the following list:L= [1, 2, 3, 4, 5, 6, 7, 8, 9] (i) Return a list of numbers starting from the last to second item of the list (ii)Return a list that start from 3rd item to second last item 3. Write a function make Pairs that takes as input two lists of equal length and return a single list of same length where kth element is the pair of k element from the input list For example Make Pairs([1,,3,4,5],[2,3,4,9]) Return[(1,2),(3,3),(4,4),(5,9)] Make Pairs([],[]) Returm[] 4. Write a program that accepts a sentence and calculate the number of digit, uppercase and lowercase 5. Write a program to check whether a string is a palindrome or not 6. Consider a function perfect_square(number) that returns a number if it is perfect square otherwise return-1 7. Write a program to check whether a string is a palindrome or not .
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 4]
+3 ….IMPORTANT QUESTION OF UNIT-3 8. Construct a program that accepts a comma separated sequence of word as an input and prints the word in a comma- separated sequence after sorting them alphabetically. 9. What is tuple. Explain the unpacking of tuple. Explain the operation applied on tuple 10 Write a python function removekth (s,k) that takes as input a string and integer k>=0 and remove the character at index k. if k is beyond the length of s, the whole of s is returned For example removekth(“python”,2) return pyhon Removekth(“mango”,1)return mngo 11 Write a python program ,count_square(N) that returns the count of perfect square less than or equal to N(N>=1) for example count_square(1) return 1 only prefect square less than equal to 1 count_square(5 ) return 2 (1, 4 are the prefect square less than equal to 2 count_square(55) return 7 (1,4,9,16,25,36,49)<=55 12. Explain different functional argument with example. Write a program to construct calculator using function
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 5]
+LIST AKTU (2022-23) at is Stack Organization? The list is a sequence data type which is used to store the collection of data Lists in Python can be created by just placing the sequence inside the square brackets[ ]. . list doesn’t need a built-in function for its creation of a list. . the list may contain mutable element list may contain duplicate values with their distinct positions
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 6]
+LIST METHODS (AKTU 2022-23) 1 append() Used for adding elements to the end of the List. 2 max() Calculates the maximum of all the elements of the List 3 min() Calculates the minimum of all the elements of the List
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 7]
+4 reverse() Reverses objects of the List in place 5 remove() Removes a given object from the List. 6.Sort() Sort a List in ascending, descending, or user- defined order
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 8]
+. 7 pop() Removes and returns the last value from the List or the given index value. 8insert() method inserts an item at a specific index in a list. 9 index() method searches for a given element from the start of the list and returns the position of the first occurrence.
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 9]
+10 clear() removes all items from the List making it an empty/null list. 11.Count() returns the count of the occurrences of a given element in a list. 12 extend() It is method adds items of an iterable (list, tuple, dictionary, etc) at the end of a list. 13 Copy() A shallow copy creates a new object, but it does not create new copies of nested objects (like lists inside a list). Instead, it copies references to those nested objects. So, changes to nested objects affect both the original and the copied object.
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 10]
+.
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 11]
+.
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 12]
+LIST ARE MUTUBLE (AKTU 2023-24 ODD) at is Stack Organization? Yes, lists in Python are mutable, which means that their elements can be changed after the list has been created. This includes adding, removing, or modifying elements.
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 13]
+LIST SLICING In order to access a range of elements in a list, you need to slice a list. One way to do this is to use the simple slicing operator i.e. colon(:). Lst[ Initial : End : IndexJump ] TO PRINT THE COMPLETE LIST PRINT ONLY 2,3,4 ,5 index element
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 14]
+1 Print from 4 element of the list then take jump of 2 upto the end of the list. Write a function to find ASCII value of the character. Write a program to reverse a list
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 15]
+List comprehension (AKTU 2022-23) It is used to create a new list from the existing list Syntax: newList = [ expression(element) for element in oldList if condition ] Question:- Write a function lessthan (lst,k) to return list of number less than k from the list lst. The function mnust use list comprehension Lessthan([1,-2,0,5,-3],0) returns[-2.-3] (AKTU 2020- 21)
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 16]
+lustrate different list slicing constructs for the following operations on the following list:L= [1, 2, 3, 4, 5, 6, 7, 8, 9] (AKTU 2023-24 ODD) 1. Return a list of numbers starting from the last to second item of the list 2. Return a list that start from 3rd item to second last item. 3. Return a list that has only even position elements of list L. 4. Return a list that starts from the middle of the list L. 5. Return a list that reverses all the elements starting from element at index 0 to middle index only and return the entire list. 6. Divide each element of the list by 2 and replace it with the remainder.
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 17]
+lustrate different list slicing constructs for the following operations on the following list:L= [1, 2, 3, 4, 5, 6, 7, 8, 9] 1. Return a list of numbers starting from the last to second item of the list 2. Return a list that start from 3rd item to second last item. 3. Return a list that has only even position elements of list L to list M. 4. Return a list that starts from the middle of the list L. 5. Return a list that reverses all the elements starting from element at index 0 to middle index only and return the entire list. 6. Divide each element of the list by 2 and replace it with the remainder.
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 18]
+Write python function, alternating(lst) that takes as a argument a sequence list. The function return true if the elements in list are alternatively odd and even starting with even number otherwise it return false (AKTU 2020- 21)
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 19]
+Write a function make Pairs that takes as input two lists of equal length and return a single list of same length where kth element is the pair of k element from the input list For example Make Pairs([1,,3,4,5],[2,3,4,9]) Return[(1,2),(3,3),(4,4),(5,9)] Make Pairs([],[]) Returm[] (AKTU 2020-21)
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 20]
+Consider following filter (AKTU 2023-24 ODD) 1 filter all the numbers 2 filter all the string starting with vowels
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 21]
+filters all the strings that contains any of the following noun: agra ,Ramesh , tomato, Patna
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 22]
+TUPLES(AKTU 2022-23) at is Stack Organization?  Tuples are similar as list but only difference is that they are immutable Creating Python Tuples Using round brackets  With one item Tuple Constructor
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 23]
+What is Immutable in Tuples? Tuples in Python are similar to Python list but not entirely. Tuples are immutable and ordered and allow duplicate values. Some Characteristics of Tuples in Python. We can find items in a tuple since finding any item does not make changes in the tuple. One cannot add items to a tuple once it is created. Tuples cannot be appended or extended. We cannot remove items from a tuple once it is created.
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 24]
+Unpacking a Tuple (AKTU 2023-24 ODD) In Python, there is a very powerful tuple assignment feature that assigns the right-hand side of values into the left-hand side. In another way, it is called unpacking of a tuple of values into a variable. In packing, we put values into a new tuple while in unpacking we extract those values into a single variable. Tuple unpacking in Python allows you to assign elements of a tuple to multiple variables in a single statement. This is useful when you have a tuple and want to extract its values directly into separate variables
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 25]
+Operation on tuples
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 26]
+at is Stack Organization? Accessing Values in Python Tuples Positive index Negative index
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 27]
+at is Stack Organization? Write thon program to find repeated items in a tuple: Write a program to convert list to tuple remove any item from the tuple
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 28]
+at is Stack Organization? Write a program to reverse the element of the tuple Write a program to multiply all the element in a tuple. write a program remove duplicate elements from a list and print the updated list ( AKTU 2023-24) Write a program to add item in tuple
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 29]
+2 String A String represents a sequence of characters. It is an immutable data type(you have created a string, you cannot change it.) Python Programming does not have a character data type, a single character is simply a string with a length of 1.
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 30]
+3 Accessing characters in Python String String slicing substring = s[start : end : step] Retrieve All Characters
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 31]
+4
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 32]
+5 String built-in function 1. capitalize() method It is used to change the first letter of a string to uppercase and make all other letters lowercase.
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 33]
+6 2. isalnum() Method This method checks whether all the characters in a given string are either alphabet or numeric (alphanumeric) characters 3. isalpha() Method It is used to check whether all characters in the String are an alphabet.
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 34]
+7 4. isdecimal() Method This method checks whether all the characters in a given string is digit. 5. isdigit() Method It returns “True” if all characters in the string are digits, Otherwise, It returns “False” 6. index() Method The index() method in Python is used to find the position of a specified substring within a given string.
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 35]
+8 Syntax of index() s.index(substring, start=0, end=len(s)) 1. substring: The substring to locate within the string s. 2. start (optional): The starting index for the search. Defaults to 0 if not provided. 3. end (optional): The ending index for the search. If not provided, it defaults to the length of the string. 7. islower() method This method checks if all characters in the string are lowercase. 8. isnumeric() Method It is used to determine whether the string consists of numeric characters or not
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 36]
+9 9. isidentifier() Method This method is used to check whether a string is a valid identifier or not Note: A string is considered as a valid identifier if: It only consists of alphanumeric characters and underscore (_) Doesn’t start with a space or a number
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 37]
+10 10. upper() Method It creates a new string with all lowercase letters changed to uppercase. This method does not change the original string instead it simply returns a new one. 11. isupper() method This method returns whether all characters in a string are uppercase or not. 12. lower() Method It converts all uppercase letters in a string to their lowercase.
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 38]
+String the Updating or deletion of characters from a String is not allowed. String are immutable Len() It can be used to find the length of an object Concatenation .
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 39]
+Write a Python program to get a string made of the first 2 and last 2 characters of a given string. If the string length is less than 2, return the empty string instead.
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 40]
+write a progarm to take two string and fid out the common letter between them
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 41]
+Write a Python function to get a string made of 4 copies of the last two characters of a specified string (length must be at least 2) Write a program to Reverse string if length is a multiple of 4
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 42]
+Write a Python program to change a given string to a newly string where the first and last chars have been exchange Write a Python program to remove characters that have odd index values in a given string.
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 43]
+Write a program that accepts a sentence and calculate the number of digit, uppercase and lowercase (AKTU 2021-22) Write a program to change a given string to a new string where the first and last chars have been changed(AKTU 2021- 22)
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 44]
+Write a program to count the vowels present in given input . (AKTU 2022-23) Write a program to check whether a string is a palindrome or not (AKTU 2022-23)
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 45]
+How can you randomize the items of a list in place in python ? (AKTU 2021-22) What will be the output
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 46]
+Write a program that accepts sequence of lines as input and print the lines after making all character in the sentence is capitalized(AKTU 2022-23)
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 47]
+Consider a function perfect_square(number) that returns a number if it is perfect square otherwise return-1 ( AKTU 2023-24 ODD) Split()
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 48]
+Construct a program that accepts a comma separated sequence of word as an input and prints the word in a comma- separated sequence after sorting them alphabetically(AKTU 2023-24 ODD) What will be the output. (AKTU 2022-23) Final result is string
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 49]
+Construct a function ret_smaller(l) that return smaller list from a nested list. if two list have same length then return the first list that is encountered (AKTU 2023-24 ODD)
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 50]
+W rite a Python function to insert a string in the middle of a string.
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 51]
+sets A Set in Python is used to store a collection of items with the following properties. No duplicate elements. If try to insert the same item again, it overwrites previous one. An unordered collection. When we access all items, they are accessed without any specific order and we cannot access items using indexes as we do in lists. Mutable, meaning we can add or remove elements after their creation, the individual elements within the set cannot be changed directly Note: There is no specific order for set elements to be printed
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 52]
+1. Mutability of Sets (Adding & Removing Elements)
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 53]
+Key points: add() inserts a new element remove() deletes an element but raises an error if it's not found. discard() deletes an element but does not raise an error if it's missing clear() removes all elements. 2. Elements Inside a Set Must Be Immutable Although we can modify the set itself, we cannot change the elements inside the set directly. Attempting to Add a Mutable Element (List)
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 54]
+Using a Tuple Instead of a List Mutable elements (like lists, dictionaries, sets) cannot be stored in a set .Immutable elements (like numbers, strings, tuples) are allowed. Conclusion Sets are mutable → We can add or remove elements. Set elements must be immutable → We cannot modify elements directly. Lists and dictionaries cannot be elements of a set, but tuples and strings can.
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 55]
+Heterogeneous Element with Python Set Python sets can store heterogeneous elements in it, i.e., a set can store a mixture of string, integer, boolean, etc datatypes. UNION The union of two sets combines all unique elements from both sets.
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 56]
+Intersection Diffrence
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 57]
+Clearing python set
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 58]
+Write a program to find permutation of a given string. What will be the output ? (AKTU 2022-23)
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 59]
+Question.1 Which of the following statement produce an error in python? statement 1: x,y,z=1,2,3 statement 2: a,b=4,5,6 statement 3: u=7,8,9(AKTU 2020-21) Statement 1 give no error Statement 2 gives error because 6 is not assigned to any variable Statement 3 gives error as 8,9 is not declared to any variable Q2 Explain why this program generate error X=[’12’,’hello’,456] X[0]*=3 X[1][1]=‘bye’ X[0]*=3 (AKTU 2020-21) It does not give any error . X[0] refers to the string '12'. Multiplying a string by an integer in Python repeats the string that many times. This updates X[0] to '121212', and now the list X becomes: X = ['121212', 'hello', 456] X[1][1]=‘bye’ Here, X[1] refers to the string 'hello', and X[1][1] refers to the character at index 1 of 'hello', which is 'e'. The intention seems to be to replace the character 'e' with the string 'bye'. However, this line generates an error because strings in Python are immutable, meaning their individual characters cannot be changed.
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 60]
+Python Dictionary Method (AKTU 2022-23) at is Stack Organization?
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 61]
+at is Stack Organization?
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 62]
+at is Stack Organization?
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 63]
+at is Stack Organization?
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 64]
+at is Stack Organization?
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 65]
+at is Stack Organization?
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 66]
+LIST (AKTU 2022-23) DICTIONARY The list is a collection of index value pairs like that of the array in C++. The dictionary is a hashed structure of the key and value pairs. The list is created by placing elements in [ ] separated by commas “,” The dictionary is created by placing elements in { } as “key”:”value”, each key-value pair is separated by commas “, “ The elements are accessed via indices. The elements are accessed via key-value pairs. The order of the elements entered is maintained. There is no guarantee for maintaining order. Lists are orders, mutable, and can contain duplicate values. Dictionaries are unordered and mutable but they cannot contain duplicate keys.
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 67]
+Append() AKTU (2022-23) Extend() Append single element at the end of the list Append multiple elements fro, an iterable at the end of the list Accepts single element as an argument Accept an iterable (e.g. list,tuple, string) as an argument List AKTU( 2022-23) tuples List are mutable Tuples are immutable List are usually slower than tuples They are faster than list list1=[10,20,30] Tup1=(10,20,30)
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 68]
+Array AKTU 2019-20) list Arrays have a fixed size set during creation. Lists are dynamic and can change in size during runtime. All elements in an array must be of the same data type. Lists can accommodate elements of different data types. Memory for the entire array is allocated at once during initialization. Lists dynamically allocate memory as elements are added or removed. Arrays are less flexible as their size cannot be easily changed. Lists are more flexible, allowing easy addition or removal of elements.
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 69]
+What will bet the output ? AKTU( 2021-22) Write a python function to convert a decimal number to its binary ,octal and hexadecimal.
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 70]
+Write a python function removekth (s,k) that takes as input a string and integer k>=0 and remove the character at index k. if k is beyond the length of s, the whole of s is returned For example removekth(“python”,2) return pyhon Removekth(“mango”,1)return mngo AKTU (2023-24 ODD) AKTU (2020-21)
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 71]
+Write a program factor(N) that return a list of all positive divisor of N (N>=1). AKTU (2020-21) Write a python program to add item in a tuple. AKTU (2019-20)
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 72]
+Write a python code to find out occurrence of an elements in a list.
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 73]
+Write a python program ,count_square(N) that returns the count of perfect square less than or equal to N(N>=1) for example count_square(1) return 1 only prefect square less than equal to 1 count_square(5 ) return 2 (1, 4 are the prefect square less than equal to 2 count_square(55) return 7 (1,4,9,16,25,36,49)<=55 AKTU (2020-21)
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 74]
+Ques. Write a python function, searchMany(s,x,k) that takes an argument a sequence s and integersx,k(k>0) the function returns true if there are at most k occurrences of x in s .otherwise it returns false searchMany ([10,17,15,12],15,1) return true, searchMany([10,12,12,12],12,2) return falseAKTU (2020-21)
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 75]
+A website requires the users to input username and password to register. Construct a program to check the validity of password input by users. Following are the criteria for checking the password (Aktu 2023-24 ODD 1. At least 1 letter between [a-z] 2. At least 1 number between [0-9] 3. At least 1 letter between [A-Z] 4. At least 1 character from [$#@] 5. Minimum length of transaction password: 6 6. Maximum length of transaction password: 12 7. Your program should accept a sequence of comma separated passwords and will check them according to the above criteria. Passwords that match the criteria are to be printed, each separated by a comma
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 77]
+The import re statement in Python is used to import the re module, which provides support for working with regular expressions. Regular expressions (regex) are patterns used to match character combinations in strings. The re module allows you to perform tasks such as searching, matching, and replacing text using these patterns.
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 78]
+FUNCTION Python Functions is a block of statements that return the specific task. The idea is to put some commonly or repeatedly done tasks together and make a function so that instead of writing the same code again and again for different inputs, we can do the function calls to reuse code contained in it over and over again. Some Benefits of Using Functions Increase Code Readability Increase Code Reusability Types of Functions in Python There are mainly two types of functions in Python Built-in library function: These are Standard functions in Python that are available to use. User-defined function: We can create our own functions based on our requirements.
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 79]
+Python Function Declaration
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 80]
+Python Function Syntax of function definition : def function name( arg 1, arg 2): { ….. } Syntax of function call Function_name( arg1,arg2)
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 81]
+Python Function Keyword: the keyword ‘def’ is used to define function header. Function name: we define the function name for identification or to uniquely identify the function. ( : ) a colon to mark the end of function header. Arguments these are the values passed to the function between parentheses Body of the function: the body process the argument to do something use ful An optional return statement to return the value from the function. function call To execute a function , we have to call it
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 82]
+Creating a Function in Python We can define a function in Python, using the def keyword. We can add any type of functionalities and properties to it as we require.
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 83]
+Python Function with Parameters If you have experience in C/C++ or Java then you must be thinking about the return type of the function and data type of arguments. That is possible in Python as well (specifically for Python 3.5 and above). Defining and calling a function with parameters def function_name(parameter: data_type) -> return_type:  """Docstring"""  # body of the function  return expression.
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 84]
+Python Function with Parameters
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 85]
+Types of Python Function Arguments AKTU (2022-23) Python supports various types of arguments that can be passed at the time of the function call. In Python, we have the following 4 types of function arguments. Default argument Keyword arguments (named arguments) Positional arguments Arbitrary arguments (variable-length arguments *args and **kwargs)
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 86]
+Default Arguments A default argument is a parameter that assumes a default value if a value is not provided in the function call for that argument
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 87]
+Keyword Arguments The idea is to allow the caller to specify the argument name with values so that the caller does not need to remember the order of parameters.
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 88]
+Keyword Arguments Keyword-only arguments mean whenever we pass the arguments(or value) by their parameter names at the time of calling the function in Python in which if you change the position of arguments then there will be no change in the output. Benefits of using Keyword arguments over positional arguments On using keyword arguments you will get the correct output because the order of argument doesn’t matter provided the logic of your code is correct. But in the case of positional arguments, you will get more than one output on changing the order of the arguments..
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 89]
+Positional Arguments Position-only arguments mean whenever we pass the arguments in the order we have defined function parameters in which if you change the argument position then you may get the unexpected output. We should use positional Arguments whenever we know the order of argument to be passed. So now, we will call the function by using the position-only arguments in two ways, and In both cases, we will be getting different outputs from which one will be correct and another one will be incorrect We used the Position argument during the function call so that the first argument (or value) is assigned to name and the second argument (or value) is assigned to age. By changing the position, or if you forget the order of the positions, the values can be used in the wrong places, as shown in the Case-2 example below, where 27 is assigned to the name and Suraj is assigned to the age
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 90]
+Positional Arguments
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 91]
+Arbitrary Keyword Arguments In Python Arbitrary Keyword Arguments, *args, and **kwargs can pass a variable number of arguments to a function using special symbols. There are two special symbols: *args in Python (Non-Keyword Arguments) **kwargs in Python (Keyword Arguments)
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 92]
+*args in Python (Non-Keyword Arguments) We can declare a variable length length argument with the*symbol The *args allows a function to accept any number of positional arguments The arguments are collected as a tuple within the function
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 93]
+*args in Python (Non-Keyword Arguments)
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 94]
+***kwargs in Python (Keyword Arguments) The *kwargs parameter allows a function to accept any number of keyword arguments. The arguments are collected as a dictionary within the function
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 95]
+Calculator using function AKTU (2019-20)
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 96]
+Calculator using function
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 97]
+Calculator using function
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 98]
+Python Scope variable AKTU (2019-20) The location where we can find a variable and also access it if required is called the scope of a variable Python Local variable Local variables are those that are initialized within a function and are unique to that function. It cannot be accessed outside of the function
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 99]
+Python Scope variable Python Local variable If we will try to use this local variable outside the function
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 100]
+Python Scope variable Python Global variables Global variables are the ones that are defined and declared outside any function and are not specified to any function. They can be used by any part of the program.
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 101]
+GENERATORS(AKTU 2023-24) A generator function is like a normal function but uses the yield keyword instead of return. When called, it does not execute immediately but returns a generator object (an iterator). This generator object can be used to fetch values one by one using next(). The function remembers its state after yielding a value and resumes execution when next() is called again.
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 102]
+lambda function Python Lambda Functions are anonymous functions means that the function is without a name. As we already know the def keyword is used to define a normal function in Python. Similarly, the lambda keyword is used to define an anonymous function in Python. SYNTAX: Syntax: lambda arguments : expression
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 103]
+lambda: The keyword to define the function. arguments: A comma- separated list of input parameters (like in a regular function). expression: A single expression that is evaluated and returned. lambda function to add two numbers Square a Number
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 104]
+How lambda function can be used within In a list comprehension You can use lambda functions inside list comprehensions to perform quick operations on elements.
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 105]
+Write a python program that use lambda function within a list comprehension to convert the list of temperature in Celsius to Fahrenheit
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 106]
+Find the LCM OF TWO NUMBER
+
+[Document: Python-U-3-ONE-SHOT-Notes.pdf | Page: 107]
+Thank You
