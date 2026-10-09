@@ -6,11 +6,12 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 
 WORKDIR /app
 
-# Install only the packages used by the PDF QA application.
-RUN pip install --no-cache-dir torch PyMuPDF
+# Install packages used by the PDF QA and image-generation scripts.
+RUN pip install --no-cache-dir torch PyMuPDF Pillow
 
-# Copy the application, trained checkpoint, extracted corpus, and source PDFs.
-COPY model.py tokenizer.py chat.py train.py data.txt ./
+# Copy the application, model scripts, extracted corpus, and source PDFs.
+COPY model.py tokenizer.py chat.py train.py image_model.py image_utils.py ./
+COPY train_image_model.py generate_image.py data.txt ./
 COPY checkpoints ./checkpoints
 COPY pdf ./pdf
 
