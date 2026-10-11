@@ -1,3 +1,12 @@
+## Use the Flask browser app
+
+Install the app and image model dependencies, then launch the local web interface:
+
+    python -m pip install -r requirements-gui.txt
+    python -m pip install -r requirements-diffusion.txt
+    python app.py
+
+Open http://127.0.0.1:5000. Choose Image studio, enter a prompt such as "a red car", and select Create image. The first run downloads the pretrained model weights. The app also includes a PDF assistant with uploads and page references. See README_GUI.md for details.
 # Image generation model
 
 This project has two image-generation paths:

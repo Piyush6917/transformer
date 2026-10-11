@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0d12">
+  <title>Transformer Studio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <a class="brand" href="/" aria-label="Transformer Studio home"><span class="brand-mark"><span></span><span></span><span></span><span></span></span><span class="brand-name">transformer<span class="brand-period">.</span></span></a>
+    <div class="workspace-switch"><span class="workspace-avatar">T</span><span class="workspace-copy"><b>My workspace</b><small>Personal</small></span><span class="chevron">⌄</span></div>
+    <div class="side-label">WORKSPACE</div>
+    <nav class="main-nav" aria-label="Workspace">
+      <button class="nav-item active" data-view="pdf-view" data-title="PDF assistant"><svg viewBox="0 0 24 24"><path d="M6 3.8h8l4 4V20H6z"/><path d="M14 4v4h4M9 13h6M9 16.5h6"/></svg><span>PDF assistant</span><span class="nav-count" id="pdf-count">0</span></button>
+      <button class="nav-item" data-view="image-view" data-title="Image studio"><svg viewBox="0 0 24 24"><rect x="3.5" y="4" width="17" height="16" rx="3"/><circle cx="9" cy="10" r="1.5"/><path d="m5 17 5-4 3 2 3.5-4 3 3"/></svg><span>Image studio</span><span class="nav-new">NEW</span></button>
+    </nav>
+    <div class="sidebar-spacer"></div>
+    <div class="side-status"><span class="status-orb"></span><div><b id="device-label">Local model ready</b><small>Private on this device</small></div><span class="status-menu">···</span></div>
+    <div class="sidebar-footer"><span class="footer-avatar">P</span><span><b>Personal account</b><small>Local workspace</small></span><span class="chevron">⌄</span></div>
+  </aside>
+  <main class="main-area">
+    <header class="topbar"><div class="breadcrumb"><span>Workspace</span><span class="crumb-slash">/</span><b id="breadcrumb-title">PDF assistant</b></div><div class="top-actions"><span class="local-pill"><i></i> Running locally</span><button class="icon-button" id="about-button" aria-label="About Transformer Studio" title="About">?</button></div></header>
+    <section class="view active" id="pdf-view">
+      <div class="view-heading pdf-heading"><div><div class="eyebrow"><span class="eyebrow-spark">✳</span> YOUR KNOWLEDGE, IN CONTEXT</div><h1>Your document copilot</h1><p>Ask questions across your PDFs and get answers with page references.</p></div><button class="outline-button" id="upload-trigger"><svg viewBox="0 0 24 24"><path d="M12 16V4m-4 4 4-4 4 4M5 14v5h14v-5"/></svg><span>Add documents</span></button></div>
+      <div class="pdf-layout">
+        <div class="chat-card">
+          <div class="chat-toolbar"><div class="assistant-identity"><span class="assistant-avatar"><span class="brand-mark mini"><span></span><span></span><span></span><span></span></span></span><div><b>Document assistant</b><small><i class="online-dot"></i> Ready to help</small></div></div><button class="text-button" id="clear-chat">Clear chat</button></div>
+          <div class="chat-messages" id="chat-messages" aria-live="polite"><div class="welcome-message"><span class="welcome-icon">✳</span><h2>Start with your documents</h2><p>Add a PDF, then ask a question. I’ll look through its pages and show where each answer came from.</p><div class="suggestion-list"><button class="question-chip" data-question="Give me a short summary of this document">Give me a short summary <span>↗</span></button><button class="question-chip" data-question="What are the main ideas?">What are the main ideas? <span>↗</span></button><button class="question-chip" data-question="Find key dates and important details">Find key dates and details <span>↗</span></button></div></div></div>
+          <form class="chat-composer" id="chat-form"><textarea id="question-input" rows="1" maxlength="2000" placeholder="Ask anything about your PDFs..." aria-label="Ask a question"></textarea><div class="composer-bottom"><span class="composer-hint"><span class="key-hint">↵</span> to ask <span class="hint-divider">·</span> Answers use your uploaded PDFs</span><button class="send-button" type="submit" aria-label="Send question"><svg viewBox="0 0 24 24"><path d="m5 12 14-7-4.5 14-2.6-5.8L5 12Z"/><path d="m12 13 7-8"/></svg></button></div></form>
+          <div class="chat-footnote">AI can make mistakes. Check important details against the cited pages.</div>
+        </div>
+        <aside class="documents-panel"><div class="panel-heading"><div><span class="panel-kicker">YOUR SOURCES</span><h3>Documents <span id="documents-total">0</span></h3></div><button class="plus-button" id="panel-upload" aria-label="Add documents">+</button></div>
+          <button class="dropzone" id="dropzone" type="button"><span class="upload-icon"><svg viewBox="0 0 24 24"><path d="M12 16V4m-4 4 4-4 4 4M5 14v5h14v-5"/></svg></span><b>Drop PDFs here</b><span>or <u>browse files</u></span><small>PDF files up to 25 MB</small></button><input id="pdf-input" type="file" accept=".pdf,application/pdf" multiple hidden>
+          <div class="document-list" id="document-list"><div class="empty-documents">Your PDFs will appear here</div></div><div class="source-note"><span class="source-lock">⌑</span><span><b>Your files stay local</b><small>Documents are processed on this computer.</small></span></div>
+        </aside>
+      </div>
+    </section>
+    <section class="view" id="image-view">
+      <div class="view-heading image-heading"><div><div class="eyebrow"><span class="eyebrow-spark">✳</span> TURN WORDS INTO WORLDS</div><h1>Make an image</h1><p>Describe what you imagine. Your local model will bring it to life.</p></div><div class="model-chip"><span class="model-spark">✦</span><span><b>Text to image</b><small>{{ model_name }}</small></span><span class="model-ready"></span></div></div>
+      <div class="studio-grid">
+        <section class="generator-card">
+          <div class="card-title-row"><div><span class="step-label">01 <i></i> PROMPT</span><h2>What should we create?</h2></div><span class="sparkle-badge">✳</span></div>
+          <label class="sr-only" for="prompt-input">Image prompt</label><div class="prompt-wrap"><textarea id="prompt-input" maxlength="1000" placeholder="A red vintage sports car on a coastal road at golden hour, cinematic photography..."></textarea><div class="prompt-meta"><span>Be descriptive for more detailed results</span><span><b id="prompt-count">0</b> / 1000</span></div></div>
+          <div class="prompt-ideas"><span>Try</span><button data-prompt="A red vintage sports car on a coastal road at golden hour, cinematic photography">🚘 &nbsp;Cinematic</button><button data-prompt="A tiny glass greenhouse on a mossy forest floor, magical soft light">🌿 &nbsp;Dreamy</button><button data-prompt="A futuristic city skyline at night, rain-slick streets, neon reflections">🌃 &nbsp;Sci-fi</button></div>
+          <div class="settings-divider"></div><div class="card-title-row settings-heading"><div><span class="step-label">02 <i></i> SETTINGS</span><h2>Fine-tune your image</h2></div><span class="settings-caption">Optional</span></div>
+          <label class="setting-row" for="steps-input"><span><b>Quality steps</b><small>More steps can improve detail, but take longer.</small></span><span class="range-control"><input id="steps-input" type="range" min="10" max="40" value="25"><output id="steps-value">25</output></span></label>
+          <label class="setting-row seed-row" for="seed-input"><span><b>Seed</b><small>Reuse a seed to recreate a variation.</small></span><input class="seed-input" id="seed-input" type="number" value="42" min="0" max="2147483647"></label>
+          <div class="generate-row"><button class="generate-button" id="generate-button"><span class="button-star">✦</span><span>Create image</span><span class="button-arrow">↗</span></button><span class="time-hint"><span class="time-icon">◷</span> First image may take a few minutes</span></div>
+        </section>
+        <section class="preview-card"><div class="preview-top"><div><span class="step-label">YOUR CANVAS</span><h2>Preview</h2></div><span class="canvas-live"><i></i> LOCAL</span></div>
+          <div class="preview-stage" id="preview-stage">
+            <div class="preview-empty" id="preview-empty"><div class="empty-art"><span class="art-orbit orbit-one"></span><span class="art-orbit orbit-two"></span><span class="art-sun"></span><span class="art-hill hill-back"></span><span class="art-hill hill-front"></span><span class="art-star star-one">✦</span><span class="art-star star-two">✧</span><span class="art-star star-three">·</span></div><h3>Your next idea starts here</h3><p>Write a prompt and your generated image will appear in this space.</p></div>
+            <div class="generating-state" id="generating-state" hidden><div class="loader-orb"><span></span><i></i></div><h3 id="generation-title">Warming up the model</h3><p id="generation-message">The first run downloads model weights to your device.</p><div class="progress-track"><span></span></div><small id="generation-subtitle">This can take a few minutes on CPU</small></div>
+            <img class="result-image" id="result-image" alt="Generated image" hidden>
+          </div><div class="preview-caption"><span id="preview-caption">Waiting for your first creation</span><a id="download-link" class="download-button" href="#" download hidden><svg viewBox="0 0 24 24"><path d="M12 4v11m-4-4 4 4 4-4M5 18v2h14v-2"/></svg> Download</a></div>
+        </section>
+      </div>
+      <div class="studio-note"><span>✦</span> Your prompts and images are processed locally on your device. <span class="note-model">MODEL · {{ model_name }}</span></div>
+    </section>
+    <footer class="main-footer"><span>TRANSFORMER STUDIO</span><span>Made for curious minds <i>✳</i></span></footer>
+  </main>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="modal-backdrop" id="about-modal" hidden><div class="about-modal"><button id="close-modal" class="modal-close" aria-label="Close">×</button><span class="about-logo"><span class="brand-mark"><span></span><span></span><span></span><span></span></span></span><div class="eyebrow">YOUR PRIVATE AI WORKSPACE</div><h2>Transformer Studio</h2><p>A local web interface for grounded PDF answers and prompt-based image generation.</p><div class="about-model"><span>Image model</span><b>{{ model_name }}</b></div><div class="about-model"><span>Connection</span><b>Local device only</b></div></div></div>
+<script src="{{ url_for('static', filename='app.js') }}" defer></script>
+</body>
+</html>
